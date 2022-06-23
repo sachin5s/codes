@@ -1,0 +1,66 @@
+.barchart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bardata{
+    background-color: #e4f1ec;
+    border: 1px solid  rgba(0, 0, 0, 0.653);
+    border-radius: 5px;
+    box-shadow: 5px 8px #c9c8c8; ;
+    width: 600px;
+    margin-left: 40px;
+
+}
+
+.details{
+    display: block;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+
+
+.note{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    justify-content: center;
+}
+.box5{
+    align-self: center;
+    margin: 5px;
+    width: 14px;
+    height: 14px;
+    background-color:green;
+}
+.box4{
+    align-self: center;
+    margin: 5px;
+    width: 14px;
+    height: 14px;
+    background-color:rgb(19, 255, 0);
+}
+.box3{
+    align-self: center;
+    margin: 5px;
+    width: 14px;
+    height: 14px;
+    background-color:rgba(253, 255, 0);
+}
+.box2{
+    align-self: center;
+    margin: 5px;
+    width: 14px;
+    height: 14px;
+    background-color:rgb(255, 165, 0);
+}
+.box1{
+    align-self: center;
+    margin: 5px;
+    width: 14px;
+    height: 14px;
+    background-color:rgb(255, 0, 0);
+}

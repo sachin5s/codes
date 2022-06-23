@@ -1,0 +1,31 @@
+
+<button mat-raised-button color="accent"(click)="onSubmit()" >Submit</button>
+
+<div class="barchart" *ngIf="barChartData[0].data.length > 0">
+  <div class="bardata">
+    <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barchartOptions"
+    [legend]="barChartLegend"
+    [type]="barChartType"
+    ></canvas>
+    <div class="note">
+    <div class="box1"></div><p  style="margin-top: 12px;font-weight: bold">very low</p>
+    <div class="box2"></div><p  style="margin-top: 12px;font-weight: bold">low</p>
+    <div class="box3"></div><p style="margin-top: 12px;font-weight: bold">medium</p>
+    <div class="box4"></div><p style="margin-top: 12px;font-weight: bold">high</p>
+    <div class="box5"></div><p style="margin-top: 12px;font-weight: bold">very high</p>
+  </div>
+  </div>
+
+
+<div class="details">
+    <h4 style="text-align: center; margin: 0 0 12px;"><strong> Ocean Test Details</strong></h4>
+    <div  *ngFor="let detail of details ; let i=index" >
+  <h4 style="display: inline-block;"><strong>{{barChartLabels[i]}} :-</strong>{{detail}}</h4>
+       <mat-divider style="margin-bottom: 8px;"></mat-divider>
+      </div>
+</div>
+</div>
+
