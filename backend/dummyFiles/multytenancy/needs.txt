@@ -1,0 +1,86 @@
+in AdminData we store one collection "tenants"
+
+inside "tenants" collection stored three documents
+1 companyA
+2 companyB
+3 companyC
+
+
+_id : 628b821a7604d5e5d7a387d6
+name : "companyA"
+dbURI: "mongodb://localhost:27017/companyA"
+
+,
+_id : 628b8351637f4b9a51affec7
+name :"companyB"
+dbURI:  "mongodb://localhost:27017/companyB"
+
+
+,
+_id : 628b835a637f4b9a51affece
+name:  "companyC"
+dbURI :"mongodb://localhost:27017/companyC"
+0
+.
+.
+.
+.
+
+****
+if user try to login then we check in req.body.companyname then we connect AdminDB then check
+given company is present in AdminData.tenants. if present then we connect that company database
+****
+
+companyA
+companyB
+companyC
+
+
+companyA .users {
+
+_id : 628b8409637f4b9a51affed9
+name : "sachin"
+phoneNumber : "9393833"
+password ; "$2a$10$ywWnGSfYAMfdMKW4AXYweeVuxccEBO8KX1h/g.QPKZ4n7MNle0xaC"
+email : "sachinram4968@gmail.com"
+company : "companyA"
+
+
+
+
+
+_id : 628b84a6637f4b9a51afff0d
+name : "narayan"
+phoneNumber : "934393833"
+password : "$2a$10$d/yVYgZb68GZwaot1dAb9.D2b/em1ZvXRO5NMGJ.kn.twNAN7ANCG"
+email : "narayan@gmail.com"
+company : "companyA"
+
+}
+
+
+
+
+
+
+
+companyB.users
+
+
+_id  : 628b841c637f4b9a51affee4
+name : "sachin"
+phoneNumber : "9393833"
+password : "$2a$10$YLuka/DXEfAv9.RqilMsUep9GHwCPnZfFYbneQAhcJBhsGR2uVsd."
+email : "sachinram4968@gmail.com"
+company : "companyB"
+
+_id :628b84bc637f4b9a51afff18
+name :  "akash"
+phoneNumber :"934393833"
+password  : "$2a$10$G1L5bEZmbREdQhaBJOfiIuLyUiWw81NyjCwFZi9Brd1kQ8GedRcmW"
+email  : "akash@gmail.com"
+company : "companyB"
+
+
+companyC.users
+....
